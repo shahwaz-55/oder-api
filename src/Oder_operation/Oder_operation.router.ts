@@ -1,8 +1,9 @@
 import express, { Router } from 'express';
-import { _OderController  } from './Oder_operation.controller';
-import { Oder_operation_validator } from './Oder_operation.validator';
+import { _OderController } from './Oder_operation.controller';
 
-//const user_registration_router: Router = express.Router();
+
+
+const _OderController_Router : Router = express.Router();
 
 /*
     ============== old method =====================
@@ -20,7 +21,10 @@ import { Oder_operation_validator } from './Oder_operation.validator';
 export const user_registration_router = Router();
 user_registration_router
     .get('/all', (req, res) => _OderController.find(res, {}))
-    .post('/',Oder_operation_validator, (req, res) => _OderController.create(res, req.body))
+    //.post('/',Oder_operation,(req, res) => _OderController.create(res, req.body))
     .put('/:id', (req, res) => _OderController.update(res, req.params.id, req.body))
     .delete('/:id', (req, res) => _OderController.delete(res, req.params.id))
+
+    
+export { _OderController_Router };
 

@@ -27,7 +27,7 @@ const taskSchema = new Schema<IUser>({
     },
     address: {
         Type: Object,
-        required: true,
+        required: false,
         line1: {
             type: String,
             default: ""

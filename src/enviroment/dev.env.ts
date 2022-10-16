@@ -1,5 +1,6 @@
 import { IEnv } from "../types"
 
+
 export const development_environment_variables: IEnv =  {
     stage: process.env.ENVIRONMENT || 'development',
     port: 8092,
