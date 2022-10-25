@@ -11,18 +11,18 @@ export interface IPopulate {
 export interface IEnv {
     stage?: string;
     port: number;
-    db: IMongoDBCfg;
-    domain: string;
+    db: string;
+    //domain: string;
     apiPath: string;
     staticPath: string;
   }
-  export interface IMongoDBCfg {
+ /* export interface IMongoDBCfg {
     name: string;
     user: string;
     pw: string;
     account: string;
     uri: (user: string, pw: string, name: string, account: string) => string;
-  }
+  }*/
   
 export interface IPagination {
   perPage?: number,

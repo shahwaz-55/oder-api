@@ -15,9 +15,9 @@ const app = new App(PORT,__middleware, allRoutes);
 
 try{
 
-    const {user, pw, name, account} = env().db;
-    const DB_URI = env().db.uri(user,pw,name,account);
-    app.mongoDB(DB_URI);
+   // const {user, pw, name, account} = env().db;
+    //const DB_URI = env().db.uri(user,pw,name,account);
+    app.mongoDB(env{}.db);
 } catch(e) {
     console.log(e);
     console.log('fail to create DB Connection string');
